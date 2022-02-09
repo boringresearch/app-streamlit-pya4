@@ -27,11 +27,13 @@ f = plt.figure(figsize=(10,3))
 st.subheader('A4')
 
 fig = plt.figure(figsize=(8.27,11.69))
-st.pyplot(fig, clear_figure=True)
 ax = fig.add_subplot(121)
+ax2 = fig.add_subplot(122)
 x = np.linspace(0,4,1000)
 ax.plot(x, np.sin(x))
 ax2.plot(x, np.cos(x), 'r:')
+st.pyplot(fig, clear_figure=True)
+
 
 fig = plt.figure(figsize=(height,width))
 st.pyplot(fig, clear_figure=True)
