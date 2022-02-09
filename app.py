@@ -21,14 +21,11 @@ st.sidebar.markdown('## Set figure height')
 height = st.sidebar.slider('height inches', 0.01, 15.00, 8.27)  # min, max, default
 
 
-f = plt.figure(figsize=(10,3))
-
-
 st.subheader('A4')
 
 fig = plt.figure(figsize=(8.27,11.69))
-ax = fig.add_subplot(121)
-ax2 = fig.add_subplot(122)
+ax = fig.add_subplot(221)
+ax2 = fig.add_subplot(222)
 x = np.linspace(0,4,1000)
 ax.plot(x, np.sin(x))
 ax2.plot(x, np.cos(x), 'r:')
